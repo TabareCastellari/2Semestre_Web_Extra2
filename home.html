@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana da tecnologia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho do site -->
+    <header class="topo">
+        <p class="topo_data">SÁBADO, 8 DE NOVEMBRO</p>
+        <h1 class="topo_nome">Semana da tecnologia</h1>
+        <p class="topo_apoio">Laboratorios de informática, bloco B</p>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section class="secao">
+            <h2>Oficinas e palestras</h2>
+            <ul class="oficinas">
+                <!-- Primeira oficina -->
+                <li class="oficina">
+                    <div class="oficina_corpo">
+                        <p class="oficina_categoria">Versionamento</p>
+                        <h3 class="oficina_nome">Git e GitHub do zero</h3>
+                        <p class="oficina_texto">Crie seu primeiro repositório e aprenda a desfazer o que quebrou.</p>
+                        <p class="oficina_tempo">2h, 30 vagas</p>
+                    </div>
+                </li>
+                
+                <!-- Segunda oficina -->
+                <li class="oficina">
+                    <div class="oficina_corpo">
+                        <p class="oficina_categoria">Automação</p>
+                        <h3 class="oficina_nome">Python para tarefas repetitivas</h3>
+                        <p class="oficina_texto">Renomeie mil arquivos e leia planilhas sem abrir o Excel.</p>
+                        <p class="oficina_tempo">3h, 25 vagas</p>
+                    </div>
+                </li>
+
+                <!-- Terceira oficina -->
+                <li class="oficina">
+                    <div class="oficina_corpo">
+                        <p class="oficina_categoria">Carreira</p>
+                        <h3 class="oficina_nome">Como é trabalhar com dados</h3>
+                        <p class="oficina_texto">Três profissionais da região contam a rotina real da área.</p>
+                        <p class="oficina_tempo">1h30, 80 vagas</p>
+                    </div>
+                </li>
+
+                <!-- Quarta oficina -->
+                <li class="oficina">
+                    <div class="oficina_corpo">
+                        <p class="oficina_categoria">Prática</p>
+                        <h3 class="oficina_nome">Hackathon relâmpago</h3>
+                        <p class="oficina_texto">Quatro horas, um problema da cidade, uma solução em equipe.</p>
+                        <p class="oficina_tempo">4h, 40 vagas</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- UPDATE: Fase 2 do projeto -->
+         <section class="secao">
+            <h2 id="cronograma">Cronograma do dia</h2>
+            <!-- Esta div envolve a tabela para ela poder rolar de lado no celular, em vez de arrebentar a página -->
+            <div class="tabela-rolagem">
+                <table class="tabela">
+                    <!-- <caption> é o título da tabela. Diferente de um <h3> solto por perto, ele fica preso a ela -->
+                    <caption>Programação completa de sábado</caption>
+                    <!-- scope="col" diz que este <th> rotula uma COLUNA -->
+                    <thead>
+                        <tr>
+                            <th scope="col">Horário</th>
+                            <th scope="col">Atividade</th>
+                            <th scope="col">Local</th>
+                            <th scope="col">Responsável</th>
+                        </tr>
+                    </thead>
+                    <!-- O nome do café é <th scope="row"> porque ele rotula a LINHA inteira: não é dadp, é etiqueta -->
+                    <tbody>
+                        <tr>
+                            <th scope="row">08:30</th>
+                            <td>Credenciamento</td>
+                            <td>Hall do bloco B</td>
+                            <td>Organização</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">09:00</th>
+                            <td>Abertura</td>
+                            <td>Auditório</td>
+                            <td>Coordenação</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">09:30</th>
+                            <td>Git e GitHub do zero</td>
+                            <td>Laboratório 2</td>
+                            <td>Monitoria</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11:30</th>
+                            <td>Intervalo</td>
+                            <td>Pátio coberto</td>
+                            <td>Organização</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13:00</th>
+                            <td>Python para automação</td>
+                            <td>Laboratório 1</td>
+                            <td>Monitoria</td>
+                        </tr>
+                    </tbody>
+
+                    <!-- colspan="6" faz esta célula ocupar  colunas -->
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">As inscrições nas oficinas encerram na sexta-feira.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+         </section>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="rodape">
+        <p>Semana da tecnologia &middot; Projeto de Desenvolvimento Web</p>
+    </footer>
+</body>
+</html>

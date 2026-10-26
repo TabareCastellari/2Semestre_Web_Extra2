@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    background-color: #eceaf2;
+    color: #27203a;
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+}
+
+/* CABEÇALHO */
+.topo {
+    background-color: #27203a;
+    color: #FFFFFF;
+    padding: 20px 24px;
+}
+
+.topo_data{
+    color: #a697c2;
+}
+
+.topo_nome {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+
+.topo_apoio {
+    margin: 4px 0 0;
+    color: #a697c2;
+    font-size: 0.85rem;
+}
+
+/* SEÇÃO DE CONTEÚDO */
+.secao {
+    padding: 30px 24px;
+}
+
+/* GRADE OFICINAS */
+.oficinas {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* O CARTÃO DO PRODUTO */
+.oficina {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.oficina_categoria {
+    background-color: #f6e4dc;
+    border-radius: 12px;
+    padding: 1px 10px;
+    width: fit-content;
+    color: #92503a;
+}
+
+.oficina_corpo {
+    padding: 15px;
+}
+
+.oficina_nome {
+  margin: 0;  
+  font-size: 1.05rem;
+}
+
+.oficina_texto {
+    margin: 8px 0;
+    color: #27203a;
+}
+
+.oficina_tempo {
+    margin: 0 0 14px;
+    font-size: 1.25rem;
+    font-weight: normal;
+    color: #c05a3b;
+}
+
+/* RODAPÉ */
+.rodape {
+    background-color: #27203a;
+    color: #FFFFFF;
+    padding: 20px 24px;
+    font-size: 0.85rem;
+}
+
+.rodape p {
+    margin: 0
+}
+
+/* UPDATE: Fase 2 do projeto */
+.tabela-rolagem {
+    overflow-x: auto;
+}
+
+/* border-collapse: collapse gruda as células umas nas outras. Sem ele, o navegador deixa um vão entre cada célula e a linha divisória aparece picotada */
+.tabela {
+    width: 100%;
+    min-width: 520px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.tabela caption {
+    text-align: left;
+    margin-bottom: 12px;
+    color: #665e7a;
+}
+
+.tabela thead {
+    background-color: #bf4d22;
+    color: white;
+}
+
+.tabela thead th {
+    padding: 16px 20px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.tabela tbody th,
+.tabela tbody td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd9e6;
+}
+
+.tabela tbody th {
+    font-weight: 700;
+}
+
+.tabela tbody tr:last-child th,
+.tabela tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tabela tfoot td {
+    padding: 16px 20px;
+    color: #665e7a;
+    border-top: 1px solid #ddd9e6;
+}
